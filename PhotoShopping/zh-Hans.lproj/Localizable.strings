@@ -1,0 +1,37 @@
+/*
+ InfoPlist.strings
+ PhotoShopping
+ 
+ Created by TEE on 2019/1/29.
+ Copyright © 2019 TEE. All rights reserved.
+ */
+CFBundleDisplayName = "买拍宝";
+ProductList = "商品列表";
+ProductInfo = "商品信息: ";
+BrandInfo = "品牌信息: ";
+ProductModel = "产品型号: ";
+MemberCenter = "会员中心";
+Collection = "收藏";
+Discount = "优惠";
+Record = "记录";
+Account = "账户";
+CustomerService = "客服";
+Price = "价格: ";
+
+loginout = "确认要退出登录吗？";
+findProduct = "为您找到以下相类似商品";
+checkVersion = "当前已经是最新版本～";
+callPhone = "拨打电话";
+confirm = "确认";
+cancel = "取消";
+price = "价格:";
+
+camera = "打开相机拍照";
+album = "相册";
+
+
+openCamera = "设置-隐私-相机-打开相机";
+open = "打开";
+
+openCameraTest = "打开相机";
+

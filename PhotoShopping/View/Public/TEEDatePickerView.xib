@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TEEDatePickerView" customModule="TEEFit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="679"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-ZQ-gRe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="679"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYU-mu-9Cu">
+                    <rect key="frame" x="0.0" y="475.5" width="375" height="203.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k1d-Te-xII">
+                    <rect key="frame" x="0.0" y="476" width="375" height="203"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <date key="date" timeIntervalSinceReferenceDate="563337354.46787703">
+                        <!--2018-11-08 02:35:54 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1199098800">
+                        <!--2038-12-31 11:00:00 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="zh_CN"/>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bgq-ZQ-gRe" secondAttribute="bottom" id="5J5-OT-7pY"/>
+                <constraint firstItem="ZYU-mu-9Cu" firstAttribute="trailing" secondItem="k1d-Te-xII" secondAttribute="trailing" id="5ka-xJ-FPj"/>
+                <constraint firstItem="ZYU-mu-9Cu" firstAttribute="bottom" secondItem="k1d-Te-xII" secondAttribute="bottom" id="Eq2-lX-14G"/>
+                <constraint firstItem="ZYU-mu-9Cu" firstAttribute="leading" secondItem="k1d-Te-xII" secondAttribute="leading" id="MzO-3L-64g"/>
+                <constraint firstItem="k1d-Te-xII" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" id="P2b-Um-Peu"/>
+                <constraint firstItem="ZYU-mu-9Cu" firstAttribute="top" secondItem="k1d-Te-xII" secondAttribute="top" id="Vsu-fX-4cn"/>
+                <constraint firstItem="bgq-ZQ-gRe" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="XMC-2P-2sh"/>
+                <constraint firstItem="bgq-ZQ-gRe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hKj-GF-SAC"/>
+                <constraint firstItem="k1d-Te-xII" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="k5x-H1-8Ny"/>
+                <constraint firstAttribute="trailing" secondItem="k1d-Te-xII" secondAttribute="trailing" id="n35-pG-IYB"/>
+                <constraint firstItem="bgq-ZQ-gRe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nuR-pW-QSF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="k1d-Te-xII" secondAttribute="bottom" id="ziM-GD-udf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgView" destination="bgq-ZQ-gRe" id="3FM-0n-AwR"/>
+                <outlet property="dataPickerView" destination="k1d-Te-xII" id="zdG-iC-lbI"/>
+            </connections>
+            <point key="canvasLocation" x="309.60000000000002" y="-315.29235382308849"/>
+        </view>
+    </objects>
+</document>

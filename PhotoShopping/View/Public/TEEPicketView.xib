@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TEEPicketView" customModule="TEEFit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="615"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSb-xM-F0q">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="615"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsS-6k-E3a">
+                    <rect key="frame" x="0.0" y="405.5" width="331" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择身高" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bw-bC-iWf">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="7Bw-bC-iWf" firstAttribute="leading" secondItem="gsS-6k-E3a" secondAttribute="leading" id="Ugl-Lv-Uq6"/>
+                        <constraint firstItem="7Bw-bC-iWf" firstAttribute="top" secondItem="gsS-6k-E3a" secondAttribute="top" id="ahR-kK-frx"/>
+                        <constraint firstAttribute="bottom" secondItem="7Bw-bC-iWf" secondAttribute="bottom" id="mHc-st-pBB"/>
+                        <constraint firstAttribute="height" constant="25" id="u68-gA-zTy"/>
+                        <constraint firstAttribute="trailing" secondItem="7Bw-bC-iWf" secondAttribute="trailing" id="w2z-ae-kVF"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkC-dI-Zs8">
+                    <rect key="frame" x="0.0" y="430.5" width="331" height="184.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="2P5-y8-W7G"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="rc3-ig-nDx"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FkC-dI-Zs8" secondAttribute="bottom" id="1GX-Uz-gPc"/>
+                <constraint firstItem="VSb-xM-F0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4TH-7w-6BR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gsS-6k-E3a" secondAttribute="trailing" id="ABu-7F-Kf4"/>
+                <constraint firstItem="FkC-dI-Zs8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="EpM-oD-6Ly"/>
+                <constraint firstItem="VSb-xM-F0q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HtG-Mr-aow"/>
+                <constraint firstItem="gsS-6k-E3a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ou2-9T-YHw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VSb-xM-F0q" secondAttribute="bottom" id="ch0-yd-uJs"/>
+                <constraint firstItem="FkC-dI-Zs8" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" id="ps3-91-GyD"/>
+                <constraint firstItem="FkC-dI-Zs8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="q3P-oA-lRI"/>
+                <constraint firstItem="FkC-dI-Zs8" firstAttribute="top" secondItem="gsS-6k-E3a" secondAttribute="bottom" id="qOo-Zb-aYM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VSb-xM-F0q" secondAttribute="trailing" id="yC8-C5-GWY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgVIEW" destination="VSb-xM-F0q" id="LO4-jz-1QC"/>
+                <outlet property="picketView" destination="FkC-dI-Zs8" id="trb-E0-WBv"/>
+                <outlet property="titleLabel" destination="7Bw-bC-iWf" id="u5n-V4-vsq"/>
+            </connections>
+            <point key="canvasLocation" x="156" y="-40.929535232383813"/>
+        </view>
+    </objects>
+</document>

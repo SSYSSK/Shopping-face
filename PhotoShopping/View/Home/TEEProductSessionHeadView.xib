@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TEEProductSessionHeadView" customModule="PhotoShopping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdO-Ns-b43">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="42.5"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btn1:" destination="iN0-l3-epB" eventType="touchUpInside" id="c8v-SS-cTx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRW-1B-ZyT">
+                    <rect key="frame" x="125" y="0.0" width="125" height="43"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btn2:" destination="iN0-l3-epB" eventType="touchUpInside" id="aLP-1r-oBi"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-82-SwM">
+                    <rect key="frame" x="0.0" y="42.5" width="112.5" height="0.5"/>
+                    <color key="backgroundColor" red="1" green="0.65541624442566815" blue="0.073679622654176935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="uXF-9B-ffJ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdP-Pa-ozz">
+                    <rect key="frame" x="250" y="0.0" width="125" height="43"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btn3:" destination="iN0-l3-epB" eventType="touchUpInside" id="cl1-9a-SS6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LRW-1B-ZyT" secondAttribute="bottom" id="2DA-1p-uUt"/>
+                <constraint firstItem="LRW-1B-ZyT" firstAttribute="width" secondItem="UdO-Ns-b43" secondAttribute="width" id="2WF-PZ-WFk"/>
+                <constraint firstItem="LRW-1B-ZyT" firstAttribute="leading" secondItem="UdO-Ns-b43" secondAttribute="trailing" id="9Mw-WL-buE"/>
+                <constraint firstAttribute="bottom" secondItem="dPN-82-SwM" secondAttribute="bottom" id="9uY-e2-0u4"/>
+                <constraint firstItem="dPN-82-SwM" firstAttribute="top" secondItem="UdO-Ns-b43" secondAttribute="bottom" id="Av9-XO-0Mh"/>
+                <constraint firstAttribute="trailing" secondItem="LdP-Pa-ozz" secondAttribute="trailing" id="E2b-kQ-8tA"/>
+                <constraint firstItem="LRW-1B-ZyT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="I7V-KE-07o"/>
+                <constraint firstItem="UdO-Ns-b43" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JRD-iz-kL9"/>
+                <constraint firstItem="LdP-Pa-ozz" firstAttribute="leading" secondItem="LRW-1B-ZyT" secondAttribute="trailing" id="Nc6-Xq-f1D"/>
+                <constraint firstItem="LdP-Pa-ozz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZVI-FS-03P"/>
+                <constraint firstItem="dPN-82-SwM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dzG-3M-ZDi"/>
+                <constraint firstItem="dPN-82-SwM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.3" id="gki-u3-Eqr"/>
+                <constraint firstItem="UdO-Ns-b43" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qAV-Vg-vZH"/>
+                <constraint firstItem="UdO-Ns-b43" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="rMO-SF-chv"/>
+                <constraint firstItem="LdP-Pa-ozz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="sT7-YM-fTc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lineView" destination="dPN-82-SwM" id="fgP-DP-y41"/>
+            </connections>
+            <point key="canvasLocation" x="-311" y="-85"/>
+        </view>
+    </objects>
+</document>

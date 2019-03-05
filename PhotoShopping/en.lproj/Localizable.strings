@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  PhotoShopping
+
+  Created by TEE on 2019/1/31.
+  Copyright © 2019 TEE. All rights reserved.
+*/
+CFBundleDisplayName = "TEE";
+ProductList = "Product List";
+ProductInfo = "Product Info: ";
+BrandInfo = "Brand Info: ";
+ProductModel = "Product model: ";
+MemberCenter = "Member Center";
+Account = "Account";
+Collection = "Collection";
+Discount = "Discount";
+Record = "Record";
+CustomerService = "CustomerService";
+Price = "Price: ";
+
+loginout = "Are you sure you want to log out?";
+findProduct = "Find the following similar products for you";
+checkVersion = "It's the latest version.";
+callPhone = "Call";
+confirm = "Confirm";
+cancel = "Cancel";
+price = "Price: ";
+camera = "camera";
+album = "album";
+
+openCamera = "Settings-Privacy-Camera-Open";
+open = "Enter";
+openCameraTest = "Open Camera";
