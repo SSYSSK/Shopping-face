@@ -16,11 +16,11 @@ import Photos
 typealias Mapper = ObjectMapper.Mapper
 
 #if QA
-let kBaseURLString              = "https://clienttest.tee.com"
-let kBaseUploadImageURLString   = "https://ai.tee.com:443/shopping_test"
+let kBaseURLString              = ""
+let kBaseUploadImageURLString   = ""
 #else
-let kBaseURLString              = "https://clienttest.tee.com"
-let kBaseUploadImageURLString   = "https://ai.tee.com:443/shopping"
+let kBaseURLString              = ""
+let kBaseUploadImageURLString   = ""
 #endif
 
 
